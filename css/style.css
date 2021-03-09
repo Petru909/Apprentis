@@ -13,7 +13,7 @@
 .home-container {
   position: relative;
   height: 70vh;
-  background: url(/images/Sans\ titre.jpg);
+  background-image: url(/images/Sans\ titre.jpg);
   background-size: cover;
   box-sizing: border-box;
   border-bottom: 5px solid #41046f;
@@ -150,7 +150,7 @@ nav ul li.btn span.show:before {
     flex: 4;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   nav ul li.btn {
     display: block;
   }
