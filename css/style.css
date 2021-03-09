@@ -15,7 +15,7 @@
 .home-container {
   position: relative;
   height: 70vh;
-  background: url(../../images/Sans\ titre.jpg);
+  background: url(../images/Sans\ titre.jpg);
   background-size: cover;
   box-sizing: border-box;
   border-bottom: 5px solid #41046f;
