@@ -11,13 +11,15 @@
 
     <link rel="stylesheet" href="css/formation.css">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css">
+    
   </head>
 
 
   <body>
 
-    <section id="home">
-      <header id="header" class="header">
+    <section id="home-page">
+      <header class="header">
         
         <nav>
       <ul>
@@ -50,10 +52,107 @@
       </script>
       </header>
       <!-- fin header -->
-
+        <h1 id="title-h">Contactez-nous</h1>
       <!-- galerie -->
-      <section class="galerie">
+      <section class="contact-section">
+         <h1 id="send-message">Envoyez nous un message, nous y répondrons le plus vite possible.</h1>
+        <div class="ctc-zone">
+         
+          <div class="contact-form">
+            
+            <div>
+              <form id="formulaire"  action="#">
+                <label for="fname">Votre nom *</label>
+                <br>
+                <input type="text" id="fname" name="firstname" placeholder="Votre nom *">
+                <br>
+                <label for="email">Votre email *</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Votre email *">
+                <br>
+                <label for="phone">Votre téléphone</label>
+                <br>
+                <input type="tel" name="phone" id="phone" placeholder="Votre téléphone">
+                <br>
+                <label for="message">Sujet du message *</label>
+                <br>
+                <input type="text" name="message" id="message" placeholder="Sujet du message *">
+                <br>
+                <label for="ctc-message">Votre message *</label>
+                <br>
+                <textarea id="subject" name="subject" placeholder="Votre message.." style="height:100%; width:100%"></textarea>
+                <br>
 
+                <input type="submit" value="Envoyer votre message">
+                <input type="reset" value="Annuler">
+
+              </form>
+            </div>    
+          </div>
+          <div class="contact-info">
+            <h1>Nos coordonnées</h1>
+            <div class="adresse">
+              <div>
+                <i class="fas fa-map-marked-alt" style="font-size:30px;color:#41046f;"></i>
+              </div>
+              <div><h4>Apprentis Pas Sages</h4>
+                    <h5>Chalet les Carlines</h5>
+                    <h5>Quartier les blancons</h5>
+                    <h5>06450 Belvédère</h5>
+              </div>
+              <div>
+
+              </div>
+            </div>
+
+            <div class="email-adresse">
+                <div>
+                    <i class="fas fa-envelope" style="font-size:30px;color:#41046f;"></i>
+                </div>
+                <div>
+                  <a href="mailto:contact@apprentispassages.com" target="_blank"><h4>contact@apprentispassages.com</h4></a>
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+            <div class="info-general">
+                <div>
+                  <i class="fas fa-phone-alt" style="font-size:30px;color:#41046f;"></i>
+                </div>
+
+                <div>
+                  <h4>Général:</h4>
+                  <h4>Presidente:</h4>
+                  <h5>Laetitia DICKA DICKA</h5>
+                  <h4>Trésorier, Coordinateur/trice :</h4>
+                  <h5>Rémi LANNEY RICCI</h5>
+                  <h4>Secrétaire :</h4>
+                  <h5>Claire Michelet</h5>
+                  <h4>Secrétaire :</h4>
+                  <h5>Bouzidi Gharoual</h5>
+                  <h4>Coordinateur/trice :</h4>
+                  <h5>Samantha LANNEY RICCI</h5>
+                </div>
+                 
+                <div>
+                   <h4>+33 (0)6.52.25.17.66</h4>
+                   <br>
+                    <h5>06.59.88.45.45</h5>
+                    <br>
+                    <h5>06.20.82.70.88</h5>
+                    <br>
+                    <h5>06.22.34.33.85</h5>
+                    <br>
+                    <h5>06.28.33.58.56</h5>
+                    <br>
+                    <h5>06.52.25.17.66</h5>
+                </div>
+
+            </div>
+          </div>
+        </div>
       </section>
 
 

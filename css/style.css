@@ -4,7 +4,6 @@
 * {
   margin: 0;
   padding: 0;
-  color: #f2f2f2;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
 }
@@ -121,6 +120,7 @@ nav ul .search-icon .icon span {
   transform: none;
 }
 nav ul li.btn {
+  color: #f2f2f2;
   font-size: 30px;
   flex: 1;
   padding: 0 40px;
@@ -139,7 +139,7 @@ nav ul li.btn span.show:before {
   content: "\f00d";
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1210px) {
   nav {
     padding: 50px 40px 10px 0;
   }
@@ -212,11 +212,12 @@ nav ul li.btn span.show:before {
   margin: auto;
   padding: 5px;
   text-align: center;
+
 }
 /* a voir la police(fonts) */
 
 .big-title {
-  text-shadow: 2px 2px 5px #df6d02;
+  text-shadow: 1px 1px 6px #df6d02;
 
   position: absolute;
   margin: 0px;
