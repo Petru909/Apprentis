@@ -16,46 +16,49 @@
 
   <body>
 
-    <section>
+    <section id="color-head">
       <header class="header">
         
         <nav>
-      <ul>
-        <li class="logo">
-          <img
-            class="logo-apprentis"
-            src="images/apprentis_pas_sages_banniere.png" width="350px" alt="logo"/>
-        </li>
-        <li class="btn"><span class="fas fa-bars"></span></li>
-        <div class="items">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html">Qui sommes Nous?</a></li>
-          <li><a href="galerie.html">Galerie photo</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </div>
-        <li class="search-icon">
-          <input type="search" placeholder="Search" />
-          <label class="icon">
-            <span class="fas fa-search"></span>
-          </label>
-        </li>
-      </ul>
-    </nav>
+          <ul>
+            <li class="logo">
+              <img
+                class="logo-apprentis"
+                src="images/apprentis_pas_sages_banniere.png" width="350px" alt="logo"/>
+            </li>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="about.html">Qui sommes Nous?</a></li>
+              <li><a href="galerie.html">Galerie photo</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </div>
+            <li class="search-icon">
+              <input type="search" placeholder="Search" />
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li>
+          </ul>
+        </nav>
 
-      <script>
-      $("nav ul li.btn span").click(function () {
-        $("nav ul div.items").toggleClass("show");
-        $("nav ul li.btn span").toggleClass("show");
-      });
-      </script>
+        <script>
+        $("nav ul li.btn span").click(function () {
+          $("nav ul div.items").toggleClass("show");
+          $("nav ul li.btn span").toggleClass("show");
+        });
+        </script>
       </header>
       <!-- fin header -->
 
+        <h1>Découvrez nos formations</h1>
       <!-- galerie -->
-      <section class="galerie">
-
-      </section>
-
+        <section class="formation-page">
+          <div class="pdf">
+            <iframe id="pdf-catalogue" src="/Catalogue2021.pdf#toolbar=0" frameborder="50px" width="100%" height="100%"></iframe>
+          </div>
+        </section>
+   
 
       <!-- footer -->
       <footer class="footer">
@@ -136,7 +139,7 @@
               </ul>
         </div>
       </footer>
-    </div>
+    </section>
   </body>
 </html>
 

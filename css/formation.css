@@ -8,8 +8,37 @@
   box-sizing: border-box;
 }
 
-.galerie {
-  box-sizing: border-box;
+#color-head {
+  background-color: lemonchiffon;
+   max-height: 30vh;
+}
+#color-head h1 {
+  text-align: center;
+  padding-top: 10px;
+  color: #41046f;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+.formation-page {
+  background:silver;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #41046f;
+  max-width: 90%;
+  
   height: 70vh;
+  margin: 20px auto 50px;
+}
+.pdf {
+  height: 100%;
+  width: auto;
+}
+
+#pdf-catalogue {
+  height: 100%;
+  width: 100%;
 }
 
