@@ -22,32 +22,25 @@
 }
 #send-message {
   padding-left: 30px;
+  text-align: center;
 }
 
 .ctc-zone {
   display: flex;
-  justify-content: space-between;
-
-  /* width: 100%; */
+  flex-wrap: wrap;
+  justify-content: center;
   height: 100%;
   margin: 20px;
 }
-
-@media screen and (max-width: 1200px) {
-  .ctc-zone {
-    display: block;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .contact-form {
-    align-self: center;
-
-
-  }
+@media (max-width: 1100px) {
+    .ctc-zone {
+        display: block;
+    }
 }
+
 /* formulaire a remplir */
 .contact-form {
-  width: 45%;
+  min-width: 50%;
   background: #fbc638;
   border-radius: 5px;
   height: auto;
@@ -74,15 +67,15 @@ textarea {
 }
 
 input[type="submit"] {
-  margin-left: 15px;
+  margin: 5px;
   background-color: #41046f;
   color: white;
-  padding: 15px 20px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
-  width: 45%;
+  min-width: 45%;
 }
 
 input[type="submit"]:hover {
@@ -92,16 +85,23 @@ input[type="submit"]:hover {
 input[type="reset"] {
   background-color: #41046f;
   color: white;
-  padding: 15px 20px;
+  margin: 5px;
+  padding: 15px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   font-weight: 600;
-  width: 45%;
+  min-width: 45%;
 }
 
 input[type="reset"]:hover {
   background-color: #45a049;
+}
+
+.btn-form-contact {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /*  fin formulaire a remplir */
@@ -116,30 +116,105 @@ input[type="reset"]:hover {
   flex-wrap: wrap;
   font-size: 13px;
   border-radius: 5px;
-  width: 45%;
+  min-width: 45%;
   height: auto;
   background: #fbc638;
 }
 
 .adresse {
+  margin: 5px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
+}
+@media (max-width: 600px) {
+    .adresse{
+    display: block;
+    margin: 0;
+    }
+    #info-adress {
+        text-align: center;
+        margin: 5px;
+    }
+
 }
 
 .email-adresse {
+  margin: 5px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+}
+#mail-adress {
+  margin: 20px;
+}
+
+@media (max-width: 600px){
+    .email-adresse {
+        margin: 0;
+        display: block;
+        flex-wrap: wrap;
+    }
+    #icon, #mail-adress {
+        text-align: center;
+        margin: 5px;
+        font-size: 80%;
+    }
+
 }
 
 .info-general {
+  margin: 5px;
   padding: 20px;
   display: flex;
   flex-direction: row;
   /* flex-wrap: wrap; */
   justify-content: space-between;
   line-height: 25px;
+
+}
+
+@media (max-width: 600px) {
+    .info-general {
+        display: block;
+        margin: 0;
+        font-size: 80%;
+
+    }
+}
+.inf-gen-pers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+/* @media (max-width: 1100px){
+    .info-general {
+      
+      align-self: center;
+    }
+     
+} */
+
+#info-pers {
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#info-pers div {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: 600;
+    
 }
