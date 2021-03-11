@@ -12,7 +12,7 @@
 .home-container {
   position: relative;
   height: 70vh;
-  background-image: url(/images/Sans\ titre.jpg);
+  background-image: url(../images/photo-back.jpg);
   background-size: cover;
   box-sizing: border-box;
   border-bottom: 5px solid #41046f;
@@ -351,6 +351,7 @@ path.two {
   text-decoration: none;
 }
 .even-title h1 {
+  margin: 5px;
   height: 55px;
   display: flex;
   font-size: 30px;
@@ -362,6 +363,8 @@ path.two {
 }
 
 .eveniments .element {
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
