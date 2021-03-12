@@ -69,16 +69,13 @@ nav ul div.items a {
 }
 nav ul div.items a:hover {
   color: #41046f;
-  background: darkorange;
-  transform: translateY(-4px);
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.05),
-    0 24px 24px rgba(0, 0, 0, 0.05), 0 36px 36px rgba(0, 0, 0, 0.05),
-    0 64px 64px rgba(0, 0, 0, 0.15), 0 64px 128px rgba(0, 0, 0, 0.15),
+  background: #fbc638;
+  box-shadow: 
     0 2px 2px 3px rgba(236, 112, 11, 0.25),
-    0 2px 2px 0px rgba(243, 222, 29, 0.95);
+    1px 1px 4px #fbc638;
   border-radius: 5px;
   font-weight: 600;
-  transition: 0.1s ease-in;
+  transition: 0.2s ease-in;
 }
 
 nav ul .search-icon {
@@ -211,13 +208,12 @@ nav ul li.btn span.show:before {
   margin: 0;
   padding: 0;
   text-align: center;
-
 }
 /* a voir la police(fonts) */
 
 .big-title {
-  text-shadow: 1px 1px 6px #df6d02;
 
+  text-shadow: 4px 4px 8px rgb(173, 92, 0);
   position: absolute;
   margin: 0px;
   padding: 0px;
@@ -229,15 +225,18 @@ nav ul li.btn span.show:before {
   letter-spacing: 5px;
 }
 
+
 /* section 2 prestation */
 .prestation {
+  background: linear-gradient(bisque, lemonchiffon);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
-  padding: 5px;
+  padding-bottom: 25px;
 }
+
 .formation {
   margin: 0;
   padding: 10px;
@@ -338,6 +337,7 @@ path.two {
 
 /* section 3 */
 .eveniments {
+  /* background: linear-gradient(lemonchiffon, bisque); */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -351,20 +351,22 @@ path.two {
   text-decoration: none;
 }
 .even-title h1 {
-  margin: 5px;
-  height: 55px;
+  margin: 0;
+  height: auto;
   display: flex;
   font-size: 30px;
   font-weight: 600;
   color: #41046f;
-  padding: 10px;
+  padding: 0;
   text-align: center;
   text-shadow: 2px 2px 5px #ec6517;
 }
 
 .eveniments .element {
+  background: bisque;
   margin: 10px;
   padding: 10px;
+  width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -425,18 +427,11 @@ footer .social-media-links li {
   padding: 5px;
 }
 footer .social-media-links a {
-  border-bottom: 0px solid rgba(0, 0, 0, 0.95);
-  border-radius: 4px;
-  /* box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0), 0 6px 8px rgba(0, 0, 0, 0),
-    0 24px 24px rgba(0, 0, 0, 0), 0 36px 36px rgba(0, 0, 0, 0),
-    0 64px 64px rgba(0, 0, 0, 0), 0 64px 128px rgba(0, 0, 0, 0),
-    0 120px 0 rgba(0, 0, 0, 0), 0 86px 8px 6px rgba(0, 0, 0, 0); */
   display: inline-block;
   height: 30px;
   padding: 30px;
   position: relative;
   transition: 0.2s ease-in;
-  width: 30px;
 }
 footer .social-media-links a svg {
   left: 15px;
@@ -445,22 +440,11 @@ footer .social-media-links a svg {
   height: 30px;
   width: 30px;
 }
-footer .social-media-links a svg.glow path,
-footer .social-media-links a svg.glow circle {
-  fill: rgba(0, 0, 0, 0);
-}
+
 footer .social-media-links a svg path,
 footer .social-media-links a svg circle {
-  fill: #0da100;
+  fill: lightgray;
   transition: 0.2s ease-in;
-}
-footer .social-media-links a:hover {
-  transform: translateY(-4px);
-  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.05),
-    0 24px 24px rgba(0, 0, 0, 0.05), 0 36px 36px rgba(0, 0, 0, 0.05),
-    0 64px 64px rgba(0, 0, 0, 0.15), 0 64px 128px rgba(0, 0, 0, 0.15),
-    0 8px 8px 6px rgba(236, 112, 11, 0.25),
-    0 8px 4px 0px rgba(243, 222, 29, 0.95);
 }
 footer .social-media-links a:hover svg.glow {
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
@@ -475,6 +459,7 @@ footer .social-media-links a:hover svg circle {
   fill: #c7b40e;
 }
 
+
 /* buton */
 .btn-contact {
   margin: 0;
@@ -485,7 +470,7 @@ footer .social-media-links a:hover svg circle {
   justify-content: center;
 }
 .btn-contact .btn-contact-us {
-  background: darkorange;
+  background: #fbc638;
   font-size: 15px;
   font-weight: 600;
   border-radius: 5px;
@@ -499,46 +484,9 @@ footer .social-media-links a:hover svg circle {
 .btn-contact .btn-contact-us:hover {
   color: #41046f;
   font-weight: 800;
-  transform: translateY(-4px);
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.05),
-    0 24px 24px rgba(0, 0, 0, 0.05), 0 36px 36px rgba(0, 0, 0, 0.05),
-    0 64px 64px rgba(0, 0, 0, 0.15), 0 64px 128px rgba(0, 0, 0, 0.15),
-    0 8px 8px 6px rgba(236, 112, 11, 0.25),
-    0 4px 4px 0px rgba(243, 222, 29, 0.95);
-}
-
-/* footer */
-
-/* buton */
-.btn-contact {
-  margin: 0;
-  padding-top: 15px;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-.btn-contact .btn-contact-us {
-  background: darkorange;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 5px;
-  border: none;
-  width: 160px;
-  height: 40px;
-  cursor: pointer;
-  transition: 0.2s ease-in;
-}
-
-.btn-contact .btn-contact-us:hover {
-  color: #41046f;
-  font-weight: 800;
-  transform: translateY(-4px);
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.05),
-    0 24px 24px rgba(0, 0, 0, 0.05), 0 36px 36px rgba(0, 0, 0, 0.05),
-    0 64px 64px rgba(0, 0, 0, 0.15), 0 64px 128px rgba(0, 0, 0, 0.15),
-    0 8px 8px 6px rgba(236, 112, 11, 0.25),
-    0 4px 4px 0px rgba(243, 222, 29, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 6px 4px rgba(236, 112, 11, 0.25),
+    0 2px 2px 0px #fbc638;
 }
 
 /* partenaire */

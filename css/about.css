@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +8,48 @@
   box-sizing: border-box;
 }
 .container {
-    height: 50vh;
-    width: 100%;
-    background: lightsalmon;
+  height: 50vh;
+  width: 100%;
+  background: bisque;
 }
 
 .about-us {
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    height: 50vh;
-    width: 100%;
-    background: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  height: auto;
+  width: 100%;
+  background: lemonchiffon;
 }
+
+#title-about {
+  padding: 30px;
+  font-size: 40px;
+  color: #41046f;
+  text-align: center;
+  font-family: "Concert One", cursive;
+  font-weight: 900;
+  
+}
+
+.about-us div {
+  margin: 0;
+  padding: 20px;
+  font-weight: 500;
+  /* border-bottom: 5px dashed #41046f; */
+  box-shadow: 1px 5px 5px #41046f;
+  text-align: initial;
+  white-space: normal;
+  line-height: 1.8;
+  
+}
+.about-us div p {
+    text-indent: 40px;
+}
+ #asociation {
+   text-align: center;
+   line-height: 25px;
+ }
