@@ -141,7 +141,7 @@ nav ul li.btn span.show:before {
 
 @media screen and (max-width: 1210px) {
   nav {
-    padding: 50px 40px 10px 0;
+    padding: 50px 40px 0 0;
   }
   nav ul li.logo {
     display: none;
@@ -156,7 +156,7 @@ nav ul li.btn span.show:before {
   }
   nav {
     z-index: 1;
-    padding: 30px 40px 9px 0;
+    padding: 30px 40px 0 0;
   }
   nav ul div.items {
     z-index: -1;
@@ -401,6 +401,7 @@ path.two {
 .footer {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   height: auto;
   width: 100%;
   background: #41046f;
