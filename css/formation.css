@@ -23,12 +23,12 @@
 
 
 .formation-page {
-  background:silver;
   display: flex;
   justify-content: center;
   flex-direction: column;
   color: #41046f;
   max-width: 90%;
+  overflow: hidden;
   
   height: 70vh;
   margin: 20px auto 50px;
@@ -36,10 +36,10 @@
 .pdf {
   height: 100%;
   width: auto;
+
 }
 
 #pdf-catalogue {
   height: 100%;
   width: 100%;
 }
-
