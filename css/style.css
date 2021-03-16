@@ -216,7 +216,7 @@ nav ul li.btn span.show:before {
   text-shadow: 4px 4px 8px rgb(173, 92, 0);
   position: absolute;
   margin: 0px;
-  padding: 0px;
+  padding: 20px;
   width: 100%;
   color: #41046f;
   font-family: "Concert One", cursive;
