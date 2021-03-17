@@ -10,36 +10,37 @@
 
 #color-head {
   background-color: lemonchiffon;
-   max-height: 30vh;
+  max-height: 30vh;
 }
 #color-head h1 {
   text-align: center;
-  padding-top: 10px;
+  padding: 10px;
   color: #41046f;
   font-size: 30px;
   font-family: "Concert One", cursive;
   font-weight: 900;
 }
 
-
 .formation-page {
   display: flex;
   justify-content: center;
   flex-direction: column;
   color: #41046f;
-  max-width: 90%;
+  width: 100%;
+  background: bisque;
   overflow: hidden;
-  
   height: 70vh;
-  margin: 20px auto 50px;
 }
 .pdf {
   height: 100%;
-  width: auto;
-
+  width: 130vh;
+  max-width: 100%;
+  margin: 30px 30px 10px;
+  align-self: center;
+  display: flex;
 }
-
-#pdf-catalogue {
-  height: 100%;
-  width: 100%;
+embed {
+  border-radius: 5px;
+  max-width: 100%;
+  width: 130vh;
 }

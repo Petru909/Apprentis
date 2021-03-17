@@ -9,31 +9,56 @@
 
 .coup-container {
   margin: 0;
-  padding: 10px;
+  padding: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+  border: lemonchiffon solid 50px;
+  /* background: linear-gradient(180deg, #41046f, lightgray,#41046f); */
+  background: blueviolet;
   /* background: bisque; */
 }
 
 #coup-title {
   display: flex;
-  font-size: 30px;
+  font-size: 40px;
   width: 100%;
   height: 10vh;
   padding: 30px;
   color: #41046f;
+  background: lemonchiffon;
   /* border-bottom: solid 15px #41046f; */
+  justify-content: center;
   text-align: justify;
   padding: 10px;
   font-family: "Concert One", cursive;
+  position: relative;
+  animation: mymove 3s forwards;
+}
+
+@keyframes mymove {
+  from {color: white; font-size: 0;}
+  to {font-size: 40px;}
+   50% {text-shadow: 10px 20px 30px blue;}
+    50% {letter-spacing: 50px;}
+}
+
+@media (max-width: 450px) {
+  #coup-title {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  .coup-container {
+    padding: 0;
+  }
 }
 
 h3 {
   font-family: "Concert One", cursive;
-  text-align: center    ;
+  text-align: center;
   font-weight: 900;
   font-size: 25px;
   padding: 10px;
@@ -41,14 +66,13 @@ h3 {
 }
 .scn,
 .histart,
-.ludiv
-{
+.ludiv {
   flex-direction: column;
   line-height: 25px;
   list-style: none;
   flex-wrap: wrap;
-  padding: 10px;
   width: 50vh;
+  margin: 10px;
 }
 
 .scn,
@@ -56,25 +80,34 @@ h3 {
 .ludik,
 .history,
 .divers {
-    background: bisque;
-    border-radius: 3px;
-    margin: 20px;
-    padding: 10px;
-    box-shadow: 1px 2px 2px 4px cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  background: bisque;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 1px 2px 2px 4px cadetblue;
 }
-
+ul {
+  padding-left: 20px;
+}
 
 .cdc {
   list-style: none;
+}
+.cdc a {
   text-decoration: none;
 }
 
 .cdc a:hover {
   /* background: #41046f; */
   transition: 0.5s;
-  box-shadow: 1px 1px 5px #4d4b48;
+  box-shadow: 1px 1px 5px #cf8921;
+  background: rgb(253, 171, 138);
   color: #41046f;
   border-radius: 3px;
   font-size: 18px;
   font-weight: 900;
+  text-decoration: underline;
 }
