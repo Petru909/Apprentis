@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+
+#header {
+  text-align: center;
+  padding: 18px;
+}
+.album {
+    margin-bottom: 10px;
+}
+ 
+p {
+  padding: 10px;
+  color: #41046f;
+  font-size: 20px;
+  font-family: "Concert One", cursive;
+  font-weight: 800;
+}
+ #myImg {
+     cursor: pointer;
+     transition: 0.7s;
+
+ }
+
+ #myImg:hover {
+     transform: scale(1.07);
+ }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 55%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 25%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 50%;
+    max-width: 100%;
+  }
+}
